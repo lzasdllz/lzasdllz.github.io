@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="x-dns-prefetch-control" content="on" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=480,initial-scale=0.667,minimum-scale=0.5,maximum-scale=4,user-scalable=yes,minimal-ui" />
+	<meta name="apple-mobile-web-app-title" content="广告是什么？" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta content="telephone=no" name="format-detection" />s
+	<meta name="full-screen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="author" content="刘礼政、文毅、何小晴" />
+	<title>广告是什么？</title>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.Yl.Slide.min.js"></script>
+	<link rel="stylesheet" href="css/css.css" type="text/css">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+</head>
+<body>
+<script type="text/javascript">
+		$(document).ready(function() {
+
+
+			$('.Yl-container').YlSlide({
+				wrapper: '.Yl-wrapper',
+				slideClass: '.Yl-slide',
+				stylePrefix: '.Yl-',
+				slideLength: 2,
+				pages: true,
+				pagination: '.Yl-pagination',
+				pagingSelect: '.Yl-pagination-bullet-active',
+				autoplay: 5000,
+				imgTemplate: {
+					0: ['<div class="Yl-img0"></div>'],
+					1: ['<div class="Yl-img1"></div>']
+				},
+				fontTemplate: {
+					0: ['<div class="Yl-font0">AIR COPOSITION</div>', '<div class="Yl-font1">我们呼吸的空气是由</div>', '<div class="Yl-font2">氮气、氧气和广告组成的</div>'],
+					1: ['<div class="Yl-font0">INVISIBLE</div>', '<div class="Yl-font1">也许它随处可见</div>', '<div class="Yl-font2">我们却往往视而不见</div>']
+				},
+				fontAnimationMode: {
+					0: ['fadeInUp', 'fadeInUp', 'slideInLeft'],
+					1: ['fadeInUp', 'fadeInUp', 'slideInLeft']
+				},
+				customTemplate: {
+					0: ['<div class="Yl-Button"><a href="ad.html">广告是什么？</a></div>'],
+					1: ['<div class="Yl-Button"><a href="ad.html">广告是什么？</a></div>']
+				},
+				resource:[//slide所需的图片资源
+					'images/layer1.jpg',
+					'images/layer2.jpg'
+				]
+			});
+
+
+		});
+		
+	</script>
+<nav class="nav">
+	<div>
+    <a class="nava" href="index.html"><span>&nbsp;&nbsp;&nbsp;&nbsp;萌新的主页</span><span style="font-weight: 100; font-size: 10px;">瑟瑟发抖</span></a>
+	<a class="nava" style="float: right" href="ad.html">▶︎播放&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	</div>
+</nav>
+
+	<div class="Yl-container" style="padding-top: 60px">
+		<div id="Percent"></div>
+	</div>
+
+</body>
+
+</html>

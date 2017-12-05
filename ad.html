@@ -1,0 +1,175 @@
+<!doctype html>
+
+
+<html lang="cn-zh">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>萌新们瑟瑟发抖的页面</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+    
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    浏览器跪了，升级吧！Chrome超好用的。
+</div>
+<div id="impress" data-autoplay="7">
+    <div id="封面" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="10">
+        <q>广告是什么？<br /><strong>这个问题我头疼了一晚上</strong> <br />算了!!!!!!</q>
+    </div>
+    
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>广告是个屁!<br />睡了!!</q>
+
+    </div>
+    
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>不过睡之前<strong>再刷下微博</strong>
+        </q>
+    </div>
+    
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span style="font-size: 60px;">微博首页全是</span>
+        <p style="font-size: 100px;">奚梦瑶摔跤了！！</p>
+        <span class="footnote">她又发了个新的道歉微博～</span>
+    </div>
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>维密转了她的微博说她好棒棒<br />
+            希望大家继续关注维密<br />
+            刷了波维密的存在感</p>
+    </div>
+    
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p ><span style="line-height: 150px">娱乐圈抱团大喊你是最</span><b>棒<span style="font-size: 40px">的</span></b>
+            <span style="font-size: 40px;">最棒的<span style="font-size: 27px;">还有我新拍的</span>电视剧</span><br /><span style="font-size: 45px;">刷了波明星的存在感</span></p>
+    </div>
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p><span style="font-size: 25px;float: left;">冠珠陶瓷说：</span>
+            <br />不怕天高，就怕地滑<br />刷了波地板的存在感</p>
+    </div>
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="6">
+        
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;但是有抒发<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<b class="positioning">正能量</b>的<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;也肯定会有<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<b class="rotating">骂街</b> 的</p>
+    </div>
+    
+    <div id="gongzhi" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <span style="font-size: 40px">两三个微博大谈<b>职业道德</b><br />
+        顺便推了一手自己的新书<br /></span>
+        刷了波公知的存在感
+    </div>
+    
+    <div id="gua" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>吃瓜的路人晒起了自己<br />工作的幸苦</p>
+        <q><a href="index.html">刷了波吃瓜群众</a>的存在感!</q>
+    </div>
+    
+    <div id="qed1" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p style="font-size: 40px">广告确实是个屁，在空气里刷自己的存在感</p>
+    </div>
+    <div id="qed" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span>广告就是刷存在感</span>&nbsp;&nbsp;&nbsp;<b> Q.E.D.</b></p>
+        <span style="font-size: 20px">文毅|屠嘉文|刘礼政|何晓清</span>
+    </div>
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+    </div>
+
+</div>
+
+<!--
+    This is a UI plugin. You can read more about plugins in src/plugins/README.md.
+    For now, I'll just tell you that this adds some graphical controls to navigate the
+    presentation. In the CSS file you can style them as you want. We've put them bottom right.
+-->
+<div id="impress-toolbar"></div>
+
+<!--
+    
+    Hint is not related to impress.js in any way.
+    
+    But it can show you how to use impress.js features in creative way.
+    
+    When the presentation step is shown (selected) its element gets the class of "active" and the body element
+    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
+    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
+    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+    
+    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
+    the first step of presentation is visible for a couple of seconds.
+    
+    ...
+    
+    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
+    It's just a quick and dirty workaround to get different hint text for touch devices.
+    In a real world it should be at least placed in separate JS file ... and the touch content should be
+    probably just hidden somewhere in HTML - not hard-coded in the script.
+    
+    Just sayin' ;)
+    
+-->
+<div class="hint">
+    <p>空格、方向键翻页 <br/>
+        右下导航栏暂停</p>
+</div>
+<script>
+	if ("ontouchstart" in document.documentElement) {
+		document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+	}
+</script>
+
+<!--
+    
+    Last, but not least.
+    
+    To make all described above really work, you need to include impress.js in the page.
+    I strongly encourage to minify it first.
+    
+    In here I just include full gua of the script to make it more readable.
+    
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because it should be done when the whole document is ready.
+    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+    
+-->
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+<!--
+    
+    The `impress()` function also gives you access to the API that controls the presentation.
+    
+    Just store the result of the call:
+    
+        var api = impress();
+    
+    and you will get three functions you can call:
+    
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( stepIndex | stepElementId | stepElement, [duration] )` - moves the presentation to the step given by its index number
+                id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                but it's optional - if not provided default transition duration for the presentation will be used.
+    
+    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+    Don't worry, it wont initialize the presentation again.
+    
+    For some example uses of this API check the last part of the gua of impress.js where the API
+    is used in event handlers.
+    
+-->
+
+</body>
+</html>
